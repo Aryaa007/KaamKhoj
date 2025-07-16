@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaamKhoj - कामखोज</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-toggle">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('hi')">हिंदी</button>
+    </div>
+
+    <header>
+      <h1 id="title">KaamKhoj</h1>
+      <p class="tagline" id="tagline">Connecting skilled workers with local job opportunities</p>
+    </header>
+
+    <!-- Worker Registration Card -->
+    <div class="card">
+      <h2 id="register-title">Worker Registration</h2>
+      <div class="input-group">
+        <label for="name" id="name-label">Full Name</label>
+        <input type="text" id="name" placeholder="e.g. Rajesh Kumar">
+      </div>
+      
+      <div class="input-group">
+        <label for="skills" id="skills-label">Your Skills</label>
+        <input type="text" id="skills" placeholder="e.g. Electrician, Plumber, Painter">
+      </div>
+      
+      <div class="input-group">
+        <label for="city" id="city-label">Your Location</label>
+        <input type="text" id="city" placeholder="e.g. Mumbai, Delhi, Bangalore">
+      </div>
+      
+      <div class="input-group">
+        <label for="contact" id="contact-label">Contact Number</label>
+        <input type="tel" id="contact" placeholder="e.g. 9876543210">
+      </div>
+      
+      <div class="input-group">
+        <label for="info" id="info-label">Additional Information</label>
+        <textarea id="info" placeholder="e.g. Available Monday-Friday, 5 years experience"></textarea>
+      </div>
+      
+      <button id="register-btn" class="btn">Register as Worker</button>
+      
+      <div id="worker-recommendations" class="recommendations" style="display: none;"></div>
+    </div>
+
+    <!-- Job Posting Card -->
+    <div class="card">
+      <h2 id="post-title">Post a Job Opportunity</h2>
+      <div class="input-group">
+        <label for="employer" id="employer-label">Your Company/Name</label>
+        <input type="text" id="employer" placeholder="e.g. Sharma Construction">
+      </div>
+      
+      <div class="input-group">
+        <label for="jobtype" id="jobtype-label">Job Type Needed</label>
+        <input type="text" id="jobtype" placeholder="e.g. Mason, Carpenter, Driver">
+      </div>
+      
+      <div class="input-group">
+        <label for="jobcity" id="jobcity-label">Job Location</label>
+        <input type="text" id="jobcity" placeholder="e.g. Sector 12, Gurgaon">
+      </div>
+      
+      <div class="input-group">
+        <label for="pay" id="pay-label">Payment Offered</label>
+        <input type="text" id="pay" placeholder="e.g. ₹800/day or ₹20,000/month">
+      </div>
+      
+      <div class="input-group">
+        <label for="jobdesc" id="jobdesc-label">Job Description</label>
+        <textarea id="jobdesc" placeholder="e.g. Need experienced mason for 15-day project"></textarea>
+      </div>
+      
+      <button id="post-btn" class="btn">Post Job Opportunity</button>
+      
+      <div id="job-recommendations" class="recommendations" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
